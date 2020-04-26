@@ -6,7 +6,7 @@
 ### Requirements
 - Java 14
 
-### What it do
+### What it does
 - When you access http://localhost:9090/ then it simply read a csv file (stored inside the application) and View the rows of CSV file in tabular form
 - You can upload a csv file of same format, and it renders the rows of csv in web view 
 
