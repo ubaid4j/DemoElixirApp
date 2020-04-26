@@ -4,84 +4,27 @@
     <title>CSV Demo</title>
     <style>
         table {
-            width: 100%;
+            width: 95%;
             border-collapse: collapse;
             margin: 50px auto;
         }
-
         /* Zebra striping */
         tr:nth-of-type(odd) {
             background: #eee;
         }
-
         th {
             background: #3498db;
             color: white;
             font-weight: bold;
         }
-
         td, th {
             padding: 10px;
             border: 1px solid #ccc;
             text-align: left;
             font-size: 18px;
         }
-
         #w100 {
             width: 400px;
-        }
-
-        /*
-        Max width before this PARTICULAR table gets nasty
-        This query will take effect for any screen smaller than 760px
-        and also iPads specifically.
-        */
-        @media only screen and (max-width: 760px),
-        (min-device-width: 768px) and (max-device-width: 1024px) {
-
-            table {
-                width: 100%;
-            }
-
-            /* Force table to not be like tables anymore */
-            table, thead, tbody, th, td, tr {
-                display: block;
-            }
-
-            /* Hide table headers (but not display: none;, for accessibility) */
-            thead tr {
-                position: absolute;
-                top: -9999px;
-                left: -9999px;
-            }
-
-            tr {
-                border: 1px solid #ccc;
-            }
-
-            td {
-                /* Behave  like a "row" */
-                border: none;
-                border-bottom: 1px solid #eee;
-                position: relative;
-                padding-left: 50%;
-            }
-
-            td:before {
-                /* Now like a table header */
-                position: absolute;
-                /* Top/left values mimic padding */
-                top: 6px;
-                left: 6px;
-                width: 45%;
-                padding-right: 10px;
-                white-space: nowrap;
-                /* Label the data */
-                content: attr(data-column);
-
-                color: #000;
-                font-weight: bold;
-            }
         }
     </style>
 </head>
@@ -92,7 +35,7 @@
     <tr>
         <th th:each="tableHeader: ${tableHeaders}">
             <label th:for="${tableHeader}">
-                <select th:onchange="'sendRequest(this);'" th:id="${tableHeader}">
+                <select th:onchange="'filter(this);'" th:id="${tableHeader}">
                     <option>Select to Filter</option>
                     <option th:each="name: ${filters.get(tableHeader)}" th:value="${name}" th:text="${name}"></option>
                 </select>
@@ -138,31 +81,39 @@
 </body>
 
 <script>
-    function sendRequest(option) {
+
+    //for filtering
+    function filter(headerName) {
+
+        //removing all filters
         const arr = ['contract_plan_seg_comp', 'contract', 'brand_name', 'plan_name', 'state', 'state_abbreviation', 'product_type'];
-        let table, filter, input, tr, td, cell, i, j;
         arr.forEach((value) => {
-            let headerName = document.querySelector("#" + value);
-            if (headerName.selectedIndex > 0) {
-                input = headerName.options[headerName.selectedIndex].value;
-                filter = input.toUpperCase();
-                table = document.getElementById("table");
-                tr = document.getElementsByTagName("tr");
-                for (i = 1; i < tr.length; i++) {
-                    tr[i].style.display = "none";
-                    td = tr[i].getElementsByTagName("td");
-                    for (j = 0; j < td.length; j++) {
-                        cell = tr[i].getElementsByTagName("td")[j]
-                        if (cell) {
-                            if (cell.innerHTML.toUpperCase().includes(filter) === true) {
-                                tr[i].style.display = "";
-                                break;
-                            }
+            let header = document.querySelector("#" + value);
+            if (header !== headerName) {
+                header.selectedIndex = 0;
+            }
+        })
+
+        //searching for selected filter
+        let filter, input, tr, td, cell, i, j;
+        if (headerName.selectedIndex > 0) {
+            input = headerName.options[headerName.selectedIndex].value;
+            filter = input.toUpperCase();
+            tr = document.getElementsByTagName("tr");
+            for (i = 1; i < tr.length; i++) {
+                tr[i].style.display = "none";
+                td = tr[i].getElementsByTagName("td");
+                for (j = 0; j < td.length; j++) {
+                    cell = tr[i].getElementsByTagName("td")[j]
+                    if (cell) {
+                        if (cell.innerHTML.toUpperCase().includes(filter) === true) {
+                            tr[i].style.display = "";
+                            break;
                         }
                     }
                 }
             }
-        });
+        }
     }
 </script>
 </html>
