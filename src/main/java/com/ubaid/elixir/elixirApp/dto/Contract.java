@@ -5,9 +5,10 @@ import lombok.NoArgsConstructor;
 
 /**
  * <p>
- *  Data Transfer object which hold the each row of csv file
- *  I gave it name Contract
+ * Data Transfer object which hold the each row of csv file
+ * I gave it name Contract
  * </p>
+ *
  * @author ubaid
  */
 @NoArgsConstructor
