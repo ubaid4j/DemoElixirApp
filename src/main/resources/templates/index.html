@@ -49,6 +49,7 @@
             </label>
         </th>
     </tr>
+    <!--/*@thymesVar id="tableHeader" type="com.ubaid.elixir.elixirApp.common.TableHeader"*/-->
     <tr>
         <th th:each="tableHeader: ${tableHeaders}" th:text="${tableHeader.toString()}">
     </tr>

@@ -1,6 +1,14 @@
 package com.ubaid.elixir.elixirApp.common;
 
+/**
+ * <p>
+ *     It represents the header of table
+ * </p>
+ *
+ * @author Ubaid ur Rehman
+ */
 public enum TableHeader {
+
     CONTRACT_PLAN_SEG_COMP("contract_plan_seg_comp"),
     CONTRACT("contract"),
     BRAND_NAME("brand_name"),
@@ -13,10 +21,6 @@ public enum TableHeader {
 
     TableHeader(String name) {
         this.label = name;
-    }
-
-    public String getValue() {
-        return label;
     }
 
     @Override

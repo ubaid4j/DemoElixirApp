@@ -1,13 +1,20 @@
 package com.ubaid.elixir.elixirApp.entity;
 
 import com.opencsv.bean.CsvBindByName;
-import com.opencsv.bean.CsvCustomBindByName;
-import com.opencsv.bean.CsvIgnore;
-import com.opencsv.bean.CsvRecurse;
 import com.ubaid.elixir.elixirApp.dto.Contract;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * <p>
+ *     This entity class is responsible for mapping csv file rows to its fields
+ *     It represent the row of csv file
+ *     It has method which convert this class to Data class
+ *     The basic different between this entity class and dto class is that, dto is pure data class
+ *     while it has a method which again split the attribute of this class and it is mapped to csv file
+ * </p>
+ * @author ubaid
+ */
 @Data
 @NoArgsConstructor
 public class ContractEntity {
@@ -26,6 +33,10 @@ public class ContractEntity {
     @CsvBindByName(column = "product_type")
     private String productType;
 
+    /**
+     *
+     * @return data class Contract
+     */
     public Contract getContract() {
         Contract newObj = new Contract();
         newObj.setContractPlanSegComp(contractPlanSegComp.split(","));

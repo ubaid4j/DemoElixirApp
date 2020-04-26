@@ -1,9 +1,15 @@
 package com.ubaid.elixir.elixirApp.dto;
 
-import com.opencsv.bean.CsvBindByName;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * <p>
+ *  Data Transfer object which hold the each row of csv file
+ *  I gave it name Contract
+ * </p>
+ * @author ubaid
+ */
 @NoArgsConstructor
 @Data
 public class Contract {

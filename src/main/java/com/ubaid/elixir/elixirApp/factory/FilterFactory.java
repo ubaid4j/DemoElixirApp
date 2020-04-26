@@ -5,6 +5,14 @@ import com.ubaid.elixir.elixirApp.dto.Contract;
 
 import java.util.*;
 
+/**
+ * <p>
+ * Simple Factory class which create filters
+ * Filters are actually all distinct items of an column
+ * for example if we have BRAND_NAME, then in the filter, we have all items of BRAND_NAME
+ * </p>
+ * @author ubaid
+ */
 public class FilterFactory {
     public static Map<TableHeader, Set<String>> createFilters(List<Contract> contracts) {
         Map<TableHeader, Set<String>> filters = new HashMap<>();
