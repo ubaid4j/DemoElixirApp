@@ -1,0 +1,214 @@
+contract_plan_seg_comp,contract,brand_name,plan_name,state,state_abbreviation,product_type
+"S5596-043-000, S5596-044-000, S5596-078-000",S5596,Anthem Blue Cross and Blue Shield,"Blue MedicareRx Enhanced (PDP), Blue MedicareRx Plus (PDP), Blue MedicareRx Value (PDP)",Missouri,MO,PDP
+"S5726-013-000, S5726-014-000, S5726-019-000",S5726,Blue Cross and Blue Shield of Kansas,"Blue MedicareRx Enhanced (PDP), Blue MedicareRx Plus (PDP), Blue MedicareRx Value (PDP)",Kansas,KS,PDP
+"S5596-043-000, S5596-044-000, S5596-078-000",S5596,Blue Cross and Blue Shield of Kansas City,"Blue MedicareRx Enhanced (PDP), Blue MedicareRx Plus (PDP), Blue MedicareRx Value (PDP)",Missouri,MO,PDP
+"S5596-033-000, S5596-034-000, S5596-076-000",S5596,Anthem Blue Cross,"Anthem Blue Cross MediBlue Rx Enhanced (PDP), Anthem Blue Cross MediBlue Rx Plus (PDP), Anthem Blue Cross MediBlue Rx Standard (PDP)",California,CA,PDP
+"S5596-059-000, S5596-060-000, S5596-082-000",S5596,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Rx Enhanced (PDP), Anthem MediBlue Rx Plus (PDP), Anthem MediBlue Rx Standard (PDP)",Colorado,CO,PDP
+"S5596-009-000, S5596-010-000, S5596-070-000",S5596,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Rx Enhanced (PDP), Anthem MediBlue Rx Plus (PDP), Anthem MediBlue Rx Standard (PDP)",Georgia,GA,PDP
+"S5596-017-000, S5596-018-000, S5596-074-000",S5596,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Rx Enhanced (PDP), Anthem MediBlue Rx Plus (PDP), Anthem MediBlue Rx Standard (PDP)","Indiana, Kentucky","IN, KY",PDP
+"S5726-013-000, S5726-014-000, S5726-019-000",S5726,Blue Cross and Blue Shield of Kansas City,"Blue MedicareRx Enhanced (PDP), Blue MedicareRx Plus (PDP), Blue MedicareRx Value (PDP)",Kansas,KS,PDP
+"S5596-001-000, S5596-046-000, S5596-066-000",S5596,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Rx Enhanced (PDP), Anthem MediBlue Rx Plus (PDP), Anthem MediBlue Rx Standard (PDP)","Maine, New Hampshire","ME, NH",PDP
+"S5596-062-000, S5596-063-000, S5596-084-000",S5596,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Rx Enhanced (PDP), Anthem MediBlue Rx Plus (PDP), Anthem MediBlue Rx Standard (PDP)",Nevada,NV,PDP
+S5960-167-000,S5960,UniCare Life & Health Insurance Company,Medicare Rx Basic (PDP),New Jersey,NJ,PDP
+"S5596-013-000, S5596-014-000, S5596-072-000",S5596,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Rx Enhanced (PDP), Anthem MediBlue Rx Plus (PDP), Anthem MediBlue Rx Standard (PDP)",Ohio,OH,PDP
+"S5596-005-000, S5596-006-000, S5596-068-000",S5596,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Rx Enhanced (PDP), Anthem MediBlue Rx Plus (PDP), Anthem MediBlue Rx Standard (PDP)",Virginia,VA,PDP
+"S5596-056-000, S5596-057-000, S5596-080-000",S5596,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Rx Enhanced (PDP), Anthem MediBlue Rx Plus (PDP), Anthem MediBlue Rx Standard (PDP)",Wisconsin,WI,PDP
+"S5596-005-000, S5596-006-000, S5596-068-000",S5596,Anthem Blue Cross and Blue Shield with CareFirst,"Anthem MediBlue Rx Enhanced (PDP), Anthem MediBlue Rx Plus (PDP), Anthem MediBlue Rx Standard (PDP)",Virginia,VA,PDP
+R4487-001-000,R4487,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access Basic (Regional PPO),"Indiana, Kentucky","IN, KY",Regional PPO
+R5941-014-000,R5941,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access Basic (Regional PPO),Ohio,OH,Regional PPO
+H5854-012-000,H5854,Anthem Blue Cross and Blue Shield,Anthem MediBlue ESRD (HMO-POS C-SNP),Connecticut,CT,HMO-POS
+H8552-028-000,H8552,Anthem Blue Cross Life and Health Insurance Company,Anthem MediBlue ESRD (PPO C-SNP),California,CA,LPPO CSNP-ESRD
+H5471-080-000,H5471,Simply Healthcare,Simply Level (HMO C-SNP),Florida,FL,HMO C-SNP
+H5471-075-000,H5471,Simply Healthcare,Simply Level (HMO C-SNP),Florida,FL,HMO C-SNP
+H5471-069-000,H5471,Simply Healthcare,Simply Level (HMO C-SNP),Florida,FL,HMO C-SNP
+H5471-073-000,H5471,Simply Healthcare,Simply Level (HMO C-SNP),Florida,FL,HMO C-SNP
+H5471-085-000,H5471,Simply Healthcare,Simply Level (HMO C-SNP),Florida,FL,HMO C-SNP
+H5471-070-000,H5471,Simply Healthcare,Simply Level (HMO C-SNP),Florida,FL,HMO C-SNP
+H3655-041-000,H3655,Anthem Blue Cross and Blue Shield,Anthem MediBlue Extra (HMO),Ohio,OH,HMO
+H3447-024-000,H3447,Anthem Blue Cross and Blue Shield,Anthem MediBlue Extra (HMO),Indiana,IN,HMO
+H3447-027-000,H3447,Anthem HealthKeepers,Anthem MediBlue Extra (HMO),Virginia,VA,HMO
+H9065-006-000,H9065,Anthem l MaineHealth,Anthem I MaineHealth Advantage Extra (HMO),Maine,ME,HMO
+H9065-007-000,H9065,Anthem l MaineHealth,Anthem I MaineHealth Advantage Extra (HMO),Maine,ME,HMO
+H5422-013-000,H5422,Anthem Blue Cross and Blue Shield,Anthem MediBlue Extra (HMO),Georgia,GA,HMO
+H8432-035-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Extra (HMO),New York,NY,HMO
+H5471-100-000,H5471,Simply Healthcare,Simply Select (HMO),Florida,FL,HMO
+H3447-028-000,H3447,Anthem HealthKeepers,Anthem MediBlue Extra (HMO),Virginia,VA,HMO
+H9065-005-000,H9065,Anthem l MaineHealth,Anthem I MaineHealth Advantage Extra (HMO),Maine,ME,HMO
+H5854-011-000,H5854,Anthem Blue Cross and Blue Shield,Anthem MediBlue Extra (HMO),Connecticut,CT,HMO
+H5471-099-000,H5471,Simply Healthcare,Simply Select (HMO),Florida,FL,HMO
+H0544-081-000,H0544,Anthem Blue Cross,Anthem MediBlue Extra (HMO),California,CA,HMO
+H5471-098-000,H5471,Simply Healthcare,Simply Select (HMO),Florida,FL,HMO
+H5471-101-000,H5471,Simply Healthcare,Simply Select (HMO),Florida,FL,HMO
+H0544-099-000,H0544,Anthem Blue Cross,Anthem MediBlue Coordination Plus (HMO),California,CA,HMO
+H3536-004-000,H3536,Anthem Blue Cross and Blue Shield,Anthem MediBlue Coordination Plus (HMO),New Hampshire,NH,HMO
+H4346-018-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Coordination Plus (HMO),Nevada,NV,HMO
+H0544-072-000,H0544,Anthem Blue Cross,Anthem MediBlue Coordination Plus (HMO),California,CA,HMO
+H0544-071-000,H0544,Anthem Blue Cross,Anthem MediBlue Coordination Plus (HMO),California,CA,HMO
+H0544-070-000,H0544,Anthem Blue Cross,Anthem MediBlue Coordination Plus (HMO),California,CA,HMO
+H8552-030-000,H8552,Anthem Blue Cross Life and Health Insurance Company,Anthem MediBlue Dual Access (PPO D-SNP),California,CA,LPPO SNP
+H7728-004-001,H7728,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Kentucky,KY,LPPO
+H4036-010-001,H4036,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Ohio,OH,LPPO
+H4036-009-000,H4036,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Wisconsin,WI,LPPO
+H1607-014-000,H1607,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Indiana,IN,LPPO
+H3342-019-000,H3342,Empire BlueCross,Empire MediBlue Access (PPO),New York,NY,LPPO
+"H1607-012-000, H1607-014-000",H1607,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Access (PPO), Anthem MediBlue Access Plus (PPO)",Indiana,IN,LPPO
+H6786-002-000,H6786,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Maine,ME,LPPO
+H4036-010-002,H4036,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Ohio,OH,LPPO
+H4909-015-000,H4909,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Missouri,MO,LPPO
+H7728-005-000,H7728,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Georgia,GA,LPPO
+H1607-012-000,H1607,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access Plus (PPO),Indiana,IN,LPPO
+H7728-006-000,H7728,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access Basic (PPO),Georgia,GA,LPPO
+H7728-002-000,H7728,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),New Hampshire,NH,LPPO
+"H4036-010-002, H4036-017-000",H4036,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Access (PPO), Anthem MediBlue Access Plus (PPO)",Ohio,OH,LPPO
+H7728-004-002,H7728,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Kentucky,KY,LPPO
+H4036-008-000,H4036,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Wisconsin,WI,LPPO
+"H7728-005-000, H7728-006-000",H7728,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Access (PPO), Anthem MediBlue Access Basic (PPO)",Georgia,GA,LPPO
+H8552-029-000,H8552,Anthem Blue Cross Life and Health Insurance Company,Anthem MediBlue Access (PPO),California,CA,LPPO
+H4909-016-000,H4909,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access Basic (PPO),Missouri,MO,LPPO
+"H4036-010-001, H4036-017-000",H4036,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Access (PPO), Anthem MediBlue Access Plus (PPO)",Ohio,OH,LPPO
+"H4909-015-000, H4909-016-000",H4909,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Access (PPO), Anthem MediBlue Access Basic (PPO)",Missouri,MO,LPPO
+H1947-001-000,H1947,Healthy Blue,Healthy Blue Dual Advantage (HMO D-SNP),Louisiana,LA,HMO-DE-SNP
+H3342-019-000,H3342,Empire BlueCross BlueShield,Empire MediBlue Access (PPO),New York,NY,LPPO
+H4909-014-000,H4909,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access (PPO),Virginia,VA,LPPO
+H8552-020-000,H8552,Anthem Blue Cross Life and Health Insurance Company,Anthem MediBlue Access (PPO),California,CA,LPPO
+H9525-007-000,H9525,Anthem Blue Cross and Blue Shield,Anthem MediBlue Dual Advantage (HMO D-SNP),Kentucky,KY,HMO-DE-SNP
+H3655-033-000,H3655,Anthem Blue Cross and Blue Shield,Anthem MediBlue Dual Advantage (HMO D-SNP),Ohio,OH,HMO-DE-SNP
+H3447-020-000,H3447,Anthem Blue Cross and Blue Shield,Anthem MediBlue Dual Advantage (HMO D-SNP),Indiana,IN,HMO-DE-SNP
+H4346-014-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Dual Advantage (HMO D-SNP),Colorado,CO,HMO-DE-SNP
+H9525-003-000,H9525,Anthem Blue Cross and Blue Shield,Anthem MediBlue Dual Advantage (HMO D-SNP),Wisconsin,WI,HMO-DE-SNP
+H8432-018-000,H8432,Empire BlueCross,Empire MediBlue Dual Advantage (HMO D-SNP),New York,NY,HMO-DE-SNP
+H3447-011-000,H3447,Anthem HealthKeepers,Anthem MediBlue Dual Advantage (HMO D-SNP),Virginia,VA,HMO-DE-SNP
+H3447-012-000,H3447,Anthem HealthKeepers,Anthem MediBlue Dual Advantage (HMO D-SNP),Virginia,VA,HMO-DE-SNP
+H9065-001-000,H9065,Anthem l MaineHealth,Anthem I MaineHealth Advantage Dual Plus (HMO D-SNP),Maine,ME,HMO-DE-SNP
+H8432-002-000,H8432,Anthem Blue Cross and Blue Shield,Anthem MediBlue Dual Advantage (HMO D-SNP),Maine,ME,HMO-DE-SNP
+H3447-018-000,H3447,Anthem Blue Cross and Blue Shield,Anthem MediBlue Dual Advantage (HMO D-SNP),Missouri,MO,HMO-DE-SNP
+H5422-007-000,H5422,Anthem Blue Cross and Blue Shield,Anthem MediBlue Dual Advantage (HMO D-SNP),Georgia,GA,HMO-DE-SNP
+"H8432-007-000, H8432-028-000",H8432,Empire BlueCross BlueShield,"Empire MediBlue Dual Advantage (HMO D-SNP), Empire MediBlue Dual Advantage Select (HMO D-SNP)",New York,NY,HMO-DE-SNP
+H5471-076-000,H5471,Simply Healthcare,Simply Complete (HMO D-SNP),Florida,FL,HMO-DE-SNP
+H8432-018-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Dual Advantage (HMO D-SNP),New York,NY,HMO-DE-SNP
+"H5854-008-000, H5854-013-000",H5854,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Dual Advantage (HMO D-SNP), Anthem MediBlue Dual Advantage Select (HMO D-SNP)",Connecticut,CT,HMO-DE-SNP
+"H0544-052-000, H0544-087-000",H0544,Anthem Blue Cross,"Anthem MediBlue Dual Advantage (HMO D-SNP), Anthem MediBlue Dual Plus (HMO D-SNP)",California,CA,HMO-DE-SNP
+H5471-082-000,H5471,Simply Healthcare,Simply Complete (HMO D-SNP),Florida,FL,HMO-DE-SNP
+"H0544-053-000, H0544-088-000",H0544,Anthem Blue Cross,"Anthem MediBlue Dual Advantage (HMO D-SNP), Anthem MediBlue Dual Plus (HMO D-SNP)",California,CA,HMO-DE-SNP
+H5471-064-000,H5471,Simply Healthcare,Simply Complete (HMO D-SNP),Florida,FL,HMO-DE-SNP
+H5471-072-000,H5471,Simply Healthcare,Simply Complete (HMO D-SNP),Florida,FL,HMO-DE-SNP
+H5471-084-000,H5471,Simply Healthcare,Simply Complete (HMO D-SNP),Florida,FL,HMO-DE-SNP
+H5471-066-000,H5471,Simply Healthcare,Simply Complete (HMO D-SNP),Florida,FL,HMO-DE-SNP
+H8432-028-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Dual Advantage Select (HMO D-SNP),New York,NY,HMO-DE-SNP
+"H0544-054-000, H0544-089-000",H0544,Anthem Blue Cross,"Anthem MediBlue Dual Advantage (HMO D-SNP), Anthem MediBlue Dual Plus (HMO D-SNP)",California,CA,HMO-DE-SNP
+H0544-100-000,H0544,Anthem Blue Cross,Anthem MediBlue Dual Advantage (HMO D-SNP),California,CA,HMO-DE-SNP
+H8432-034-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Dual Advantage Select (HMO D-SNP),New York,NY,HMO-DE-SNP
+"H0544-055-000, H0544-090-000",H0544,Anthem Blue Cross,"Anthem MediBlue Dual Advantage (HMO D-SNP), Anthem MediBlue Dual Plus (HMO D-SNP)",California,CA,HMO-DE-SNP
+H4346-023-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Care On Site (HMO I-SNP),Colorado,CO,HMO I-SNP
+H3447-026-000,H3447,Anthem HealthKeepers,Anthem MediBlue Care On Site (HMO I-SNP),Virginia,VA,HMO I-SNP
+"H5471-079-000, H5471-081-000",H5471,Simply Healthcare,"Simply Care (HMO I-SNP), Simply Comfort (HMO I-SNP)",Florida,FL,HMO I-SNP
+H5854-014-000,H5854,Anthem Blue Cross and Blue Shield,Anthem MediBlue Care On Site (HMO I-SNP),Connecticut,CT,HMO I-SNP
+"H5471-094-000, H5471-095-000",H5471,Simply Healthcare,"Simply Care (HMO I-SNP), Simply Comfort (HMO I-SNP)",Florida,FL,HMO I-SNP
+"H5471-067-000, H5471-068-000",H5471,Simply Healthcare,"Simply Care (HMO I-SNP), Simply Comfort (HMO I-SNP)",Florida,FL,HMO I-SNP
+"H5471-092-000, H5471-093-000",H5471,Simply Healthcare,"Simply Care (HMO I-SNP), Simply Comfort (HMO I-SNP)",Florida,FL,HMO I-SNP
+"H5471-096-000, H5471-097-000",H5471,Simply Healthcare,"Simply Care (HMO I-SNP), Simply Comfort (HMO I-SNP)",Florida,FL,HMO I-SNP
+"H5471-090-000, H5471-091-000",H5471,Simply Healthcare,"Simply Care (HMO I-SNP), Simply Comfort (HMO I-SNP)",Florida,FL,HMO I-SNP
+H0544-093-000,H0544,Anthem Blue Cross,Anthem MediBlue Care On Site (HMO I-SNP),California,CA,HMO I-SNP
+H9525-008-000,H9525,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Kentucky,KY,HMO
+H3655-040-000,H3655,Anthem Blue Cross and Blue Shield,Anthem MediBlue Preferred (HMO),Ohio,OH,HMO
+H3655-032-000,H3655,Anthem Blue Cross and Blue Shield,Anthem MediBlue Essential (HMO),Ohio,OH,HMO
+H3447-021-000,H3447,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Indiana,IN,HMO
+H4346-012-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Colorado,CO,HMO
+H9525-004-000,H9525,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Wisconsin,WI,HMO
+"H0544-097-000, H0544-098-000",H0544,Anthem Blue Cross,"Anthem MediBlue Plus (HMO), Anthem MediBlue Select (HMO)",California,CA,HMO
+H8432-017-000,H8432,Empire BlueCross,Empire MediBlue Plus (HMO),New York,NY,HMO
+H3447-014-000,H3447,Anthem HealthKeepers,Anthem MediBlue Plus (HMO),Virginia,VA,HMO
+H3447-025-000,H3447,Anthem HealthKeepers,Anthem MediBlue Plus (HMO),Virginia,VA,HMO
+H8432-031-001,H8432,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Maine,ME,HMO
+H3447-019-000,H3447,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Missouri,MO,HMO
+H5422-011-000,H5422,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Georgia,GA,HMO
+H3447-023-000,H3447,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Indiana,IN,HMO
+"H3655-034-000, H3655-040-000",H3655,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Plus (HMO), Anthem MediBlue Preferred (HMO)",Ohio,OH,HMO
+"H8432-008-005, H8432-027-000",H8432,Empire BlueCross BlueShield,"Empire MediBlue Plus (HMO), Empire MediBlue Select (HMO)",New York,NY,HMO
+H5471-077-000,H5471,Simply Healthcare,Simply More (HMO),Florida,FL,HMO
+H9525-006-000,H9525,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Wisconsin,WI,HMO
+"H5422-008-000, H5422-011-000",H5422,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Essential (HMO), Anthem MediBlue Plus (HMO)",Georgia,GA,HMO
+H3447-013-000,H3447,Anthem HealthKeepers,Anthem MediBlue Plus (HMO),Virginia,VA,HMO
+H3536-002-000,H3536,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),New Hampshire,NH,HMO
+H4346-017-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Nevada,NV,HMO
+H8432-017-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Plus (HMO),New York,NY,HMO
+H3655-038-000,H3655,Anthem Blue Cross and Blue Shield,Anthem MediBlue Prime Select (HMO),Ohio,OH,HMO
+H8432-016-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Select (HMO),New York,NY,HMO
+H4346-013-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Colorado,CO,HMO
+H3447-022-000,H3447,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Indiana,IN,HMO
+"H5854-009-000, H5854-010-000",H5854,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Plus (HMO), Anthem MediBlue Select (HMO)",Connecticut,CT,HMO
+H0544-056-000,H0544,Anthem Blue Cross,Anthem MediBlue Plus (HMO),California,CA,HMO
+"H5854-007-000, H5854-010-000",H5854,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Plus (HMO), Anthem MediBlue Select (HMO)",Connecticut,CT,HMO
+H5471-078-000,H5471,Simply Healthcare,Simply More (HMO),Florida,FL,HMO
+"H3536-002-000, H3536-005-000",H3536,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Plus (HMO), Anthem MediBlue Select (HMO)",New Hampshire,NH,HMO
+H0544-062-000,H0544,Anthem Blue Cross,Anthem MediBlue Plus (HMO),California,CA,HMO
+"H8432-008-007, H8432-027-000",H8432,Empire BlueCross BlueShield,"Empire MediBlue Plus (HMO), Empire MediBlue Select (HMO)",New York,NY,HMO
+"H0544-058-000, H0544-061-000",H0544,Anthem Blue Cross,"Anthem MediBlue Plus (HMO), Anthem MediBlue Select (HMO)",California,CA,HMO
+H5471-065-000,H5471,Simply Healthcare,Simply More (HMO),Florida,FL,HMO
+"H8432-010-000, H8432-032-000",H8432,Empire BlueCross BlueShield,"Empire MediBlue Plus (HMO), Empire MediBlue Select (HMO)",New York,NY,HMO
+H5854-015-000,H5854,Anthem Blue Cross and Blue Shield,Anthem MediBlue Prime (HMO),Connecticut,CT,HMO
+"H8432-013-000, H8432-027-000",H8432,Empire BlueCross BlueShield,"Empire MediBlue Plus (HMO), Empire MediBlue Select (HMO)",New York,NY,HMO
+"H0544-059-000, H0544-061-000",H0544,Anthem Blue Cross,"Anthem MediBlue Plus (HMO), Anthem MediBlue Select (HMO)",California,CA,HMO
+H5471-074-000,H5471,Simply Healthcare,Simply More (HMO),Florida,FL,HMO
+H5471-083-000,H5471,Simply Healthcare,Simply More (HMO),Florida,FL,HMO
+H8432-031-002,H8432,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Maine,ME,HMO
+H5471-071-000,H5471,Simply Healthcare,Simply More (HMO),Florida,FL,HMO
+"H8432-008-006, H8432-027-000",H8432,Empire BlueCross BlueShield,"Empire MediBlue Plus (HMO), Empire MediBlue Select (HMO)",New York,NY,HMO
+H8432-027-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Select (HMO),New York,NY,HMO
+"H0544-060-004, H0544-067-000",H0544,Anthem Blue Cross,"Anthem MediBlue Plus (HMO), Anthem MediBlue Select (HMO)",California,CA,HMO
+H3447-029-000,H3447,Anthem HealthKeepers,Anthem MediBlue Prime (HMO),Virginia,VA,HMO
+"H8432-009-000, H8432-016-000",H8432,Empire BlueCross BlueShield,"Empire MediBlue Plus (HMO), Empire MediBlue Select (HMO)",New York,NY,HMO
+H0544-064-000,H0544,Anthem Blue Cross,Anthem MediBlue Plus (HMO),California,CA,HMO
+"H0544-060-003, H0544-066-000",H0544,Anthem Blue Cross,"Anthem MediBlue Plus (HMO), Anthem MediBlue Select (HMO)",California,CA,HMO
+"H0544-065-000, H0544-091-000",H0544,Anthem Blue Cross,"Anthem MediBlue Plus (HMO), Anthem MediBlue Select (HMO)",California,CA,HMO
+"H0544-057-000, H0544-069-000",H0544,Anthem Blue Cross,"Anthem MediBlue Plus (HMO), Anthem MediBlue Select (HMO)",California,CA,HMO
+H0544-095-000,H0544,Anthem Blue Cross,Anthem MediBlue Plus (HMO),California,CA,HMO
+H0544-096-000,H0544,Anthem Blue Cross,Anthem MediBlue Plus (HMO),California,CA,HMO
+"H8432-011-000, H8432-033-000",H8432,Empire BlueCross BlueShield,"Empire MediBlue Plus (HMO), Empire MediBlue Select (HMO)",New York,NY,HMO
+H0544-063-000,H0544,Anthem Blue Cross,Anthem MediBlue Plus (HMO),California,CA,HMO
+H4346-019-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Plus (HMO),Nevada,NV,HMO
+H0544-074-000,H0544,Anthem Blue Cross,Anthem MediBlue Plus (HMO),California,CA,HMO
+H8432-005-000,H8432,Anthem Blue Cross and Blue Shield,Anthem MediBlue Choice (HMO-POS),Maine,ME,HMO-POS
+H9065-003-000,H9065,Anthem l MaineHealth,Anthem I MaineHealth Advantage Choice (HMO-POS),Maine,ME,HMO-POS
+H9065-004-000,H9065,Anthem l MaineHealth,Anthem I MaineHealth Advantage Choice (HMO-POS),Maine,ME,HMO-POS
+H9065-002-000,H9065,Anthem l MaineHealth,Anthem I MaineHealth Advantage Choice (HMO-POS),Maine,ME,HMO-POS
+H8432-015-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Choice (HMO-POS),New York,NY,HMO-POS
+H8432-014-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Choice (HMO-POS),New York,NY,HMO-POS
+H8432-006-000,H8432,Anthem Blue Cross and Blue Shield,Anthem MediBlue Choice (HMO-POS),Maine,ME,HMO-POS
+H5471-104-000,H5471,Simply Healthcare,Simply Extra (HMO),Florida,FL,HMO
+H5471-103-000,H5471,Simply Healthcare,Simply Extra (HMO),Florida,FL,HMO
+H5471-105-000,H5471,Simply Healthcare,Simply Extra (HMO),Florida,FL,HMO
+R5941-013-000,R5941,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access Core (Regional PPO),Ohio,OH,Regional PPO
+H4036-016-000,H4036,Anthem Blue Cross and Blue Shield,Anthem MediBlue Access Core (PPO),Wisconsin,WI,LPPO
+"H8432-012-000, H8432-036-000",H8432,Empire BlueCross BlueShield,"Empire MediBlue Core (HMO), Empire MediBlue Core Select (HMO)",New York,NY,HMO
+H8432-036-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Core Select (HMO),New York,NY,HMO
+H8432-012-000,H8432,Empire BlueCross,Empire MediBlue Core (HMO),New York,NY,HMO
+H8432-012-000,H8432,Empire BlueCross BlueShield,Empire MediBlue Core (HMO),New York,NY,HMO
+H0544-015-000,H0544,Anthem Blue Cross,Anthem MediBlue ESRD (HMO C-SNP),California,CA,HMO SNP
+H0544-020-000,H0544,Anthem Blue Cross,Anthem MediBlue ESRD (HMO C-SNP),California,CA,HMO SNP
+H4346-006-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Diabetes (HMO C-SNP),Nevada,NV,HMO SNP
+H0544-004-000,H0544,Anthem Blue Cross,Anthem MediBlue Diabetes (HMO C-SNP),California,CA,HMO SNP
+H0544-025-000,H0544,Anthem Blue Cross,Anthem MediBlue Diabetes (HMO C-SNP),California,CA,HMO SNP
+H0544-010-000,H0544,Anthem Blue Cross,Anthem MediBlue Diabetes (HMO C-SNP),California,CA,HMO SNP
+H0544-032-000,H0544,Anthem Blue Cross,Anthem MediBlue Diabetes (HMO C-SNP),California,CA,HMO SNP
+H4346-011-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Connect Plus (HMO),Nevada,NV,HMO
+H0544-049-000,H0544,Anthem Blue Cross,Anthem MediBlue Connect Plus (HMO),California,CA,HMO
+H0544-003-000,H0544,Anthem Blue Cross,Anthem MediBlue Connect (HMO D-SNP),California,CA,HMO-DE-SNP
+H3447-010-000,H3447,Anthem HealthKeepers,Anthem MediBlue Care On Site (HMO I-SNP),Virginia,VA,HMO I-SNP
+H4346-010-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Care On Site (HMO I-SNP),Nevada,NV,HMO I-SNP
+H0544-005-000,H0544,Anthem Blue Cross,Anthem MediBlue Care On Site (HMO I-SNP),California,CA,HMO I-SNP
+H0544-050-000,H0544,Anthem Blue Cross,Anthem MediBlue Care On Site (HMO I-SNP),California,CA,HMO I-SNP
+"H3447-003-000, H3447-004-000",H3447,Anthem HealthKeepers,"Anthem MediBlue COPD (HMO C-SNP), Anthem MediBlue Diabetes (HMO C-SNP)",Virginia,VA,HMO SNP
+"H4346-005-000, H4346-008-000",H4346,Anthem Blue Cross and Blue Shield,"Anthem MediBlue Breathe (HMO C-SNP), Anthem MediBlue Heart (HMO C-SNP)",Nevada,NV,HMO SNP
+"H0544-013-000, H0544-014-000",H0544,Anthem Blue Cross,"Anthem MediBlue Breathe (HMO C-SNP), Anthem MediBlue Heart (HMO C-SNP)",California,CA,HMO SNP
+"H0544-024-000, H0544-037-000",H0544,Anthem Blue Cross,"Anthem MediBlue Breathe (HMO C-SNP), Anthem MediBlue Heart (HMO C-SNP)",California,CA,HMO SNP
+"H0544-019-000, H0544-038-000",H0544,Anthem Blue Cross,"Anthem MediBlue Breathe (HMO C-SNP), Anthem MediBlue Heart (HMO C-SNP)",California,CA,HMO SNP
+"H0544-031-000, H0544-036-000",H0544,Anthem Blue Cross,"Anthem MediBlue Breathe (HMO C-SNP), Anthem MediBlue Heart (HMO C-SNP)",California,CA,HMO SNP
+"H3447-001-000, H3447-005-000",H3447,Anthem HealthKeepers,"Anthem MediBlue Local (HMO), Anthem MediBlue Smart Fit (HMO)",Virginia,VA,HMO
+"H4346-001-000, H4346-009-000",H4346,Anthem Blue Cross and Blue Shield,"Anthem MediBlue StartSmart Plus (HMO), Anthem MediBlue Value Plus (HMO)",Nevada,NV,HMO
+"H0544-002-000, H0544-007-000",H0544,Anthem Blue Cross,"Anthem MediBlue StartSmart Plus (HMO), Anthem MediBlue Value Plus (HMO)",California,CA,HMO
+"H0544-012-000, H0544-021-000",H0544,Anthem Blue Cross,"Anthem MediBlue StartSmart Plus (HMO), Anthem MediBlue Value Plus (HMO)",California,CA,HMO
+"H0544-007-000, H0544-008-000",H0544,Anthem Blue Cross,"Anthem MediBlue StartSmart Plus (HMO), Anthem MediBlue Value Plus (HMO)",California,CA,HMO
+"H0544-021-000, H0544-027-000",H0544,Anthem Blue Cross,"Anthem MediBlue StartSmart Plus (HMO), Anthem MediBlue Value Plus (HMO)",California,CA,HMO
+H0544-094-000,H0544,Anthem Blue Cross,Anthem MediBlue Diabetes (HMO C-SNP),California,CA,HMO SNP
+H4346-022-000,H4346,Anthem Blue Cross and Blue Shield,Anthem MediBlue Diabetes (HMO C-SNP),Colorado,CO,HMO SNP

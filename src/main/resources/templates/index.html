@@ -1,0 +1,114 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html lang="EN" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CSV Demo</title>
+    <style>
+        table {
+            width: 750px;
+            border-collapse: collapse;
+            margin: 50px auto;
+        }
+
+        /* Zebra striping */
+        tr:nth-of-type(odd) {
+            background: #eee;
+        }
+
+        th {
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        /*
+        Max width before this PARTICULAR table gets nasty
+        This query will take effect for any screen smaller than 760px
+        and also iPads specifically.
+        */
+        @media only screen and (max-width: 760px),
+        (min-device-width: 768px) and (max-device-width: 1024px) {
+
+            table {
+                width: 100%;
+            }
+
+            /* Force table to not be like tables anymore */
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            /* Hide table headers (but not display: none;, for accessibility) */
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid #ccc;
+            }
+
+            td {
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                /* Label the data */
+                content: attr(data-column);
+
+                color: #000;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<table>
+    <thead>
+    <tr>
+        <th th:each="tableHeader: ${tableHeaders}" th:text="${tableHeader.toString()}">
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="contract: ${contracts}">
+        <!--/*@thymesVar id="contract" type="com.ubaid.elixir.elixirApp.entity.Contract"*/-->
+        <td>
+            <span th:each="seg: ${contract.getContractPlanSegComp()}">
+                <p th:text="${seg}"></p>
+            </span>
+        </td>
+
+        <td th:text="${contract.getContract()}"></td>
+        <td th:text="${contract.getBrandName()}"></td>
+        <td th:text="${contract.getPlanNames()}"></td>
+        <td th:text="${contract.getState()}"></td>
+        <td th:text="${contract.getStateAbbreviation()}"></td>
+        <td th:text="${contract.getProductType()}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+
+<script>
+</script>
+</html>
