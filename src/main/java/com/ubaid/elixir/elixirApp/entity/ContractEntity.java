@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ContractEntity {
     @CsvBindByName(column = "contract_plan_seg_comp")
-    private String[] contractPlanSegComp;
+    private String contractPlanSegComp;
     @CsvBindByName(column = "contract")
     private String contract;
     @CsvBindByName(column = "brand_name")
@@ -28,11 +28,11 @@ public class ContractEntity {
 
     public Contract getContract() {
         Contract newObj = new Contract();
-        newObj.setContractPlanSegComp(contractPlanSegComp);
+        newObj.setContractPlanSegComp(contractPlanSegComp.split(","));
         newObj.setContract(contract);
         newObj.setBrandName(brandName);
-        newObj.setState(state);
-        newObj.setStateAbbreviation(stateAbbreviation);
+        newObj.setState(state.split(","));
+        newObj.setStateAbbreviation(stateAbbreviation.split(","));
         newObj.setProductType(productType);
         newObj.setPlanNames(planNames.split(","));
         return  newObj;

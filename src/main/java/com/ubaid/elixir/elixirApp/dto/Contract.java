@@ -11,7 +11,7 @@ public class Contract {
     private String contract;
     private String brandName;
     private String[] planNames;
-    private String state;
-    private String stateAbbreviation;
+    private String[] state;
+    private String[] stateAbbreviation;
     private String productType;
 }

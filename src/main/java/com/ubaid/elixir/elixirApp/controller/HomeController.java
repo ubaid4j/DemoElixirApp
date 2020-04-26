@@ -22,6 +22,7 @@ public class HomeController {
 
     private final static Resource resource = new ClassPathResource("Task-Java.csv");
     private final static List<TableHeader> tableHeaders = new ArrayList<>(EnumSet.allOf(TableHeader.class));
+
     @Autowired
     CSVService service;
 
@@ -30,6 +31,7 @@ public class HomeController {
         try {
             model.addAttribute("tableHeaders", tableHeaders);
             model.addAttribute("contracts", service.getContracts(resource.getFile()));
+            model.addAttribute("filters", service.getFilters(resource.getFile()));
             return "index";
         } catch(IOException exp) {
             model.addAttribute("contracts", null);
@@ -37,4 +39,10 @@ public class HomeController {
             return "index";
         }
     }
+
+    @GetMapping(value = "filter")
+    public String filter(Model model) {
+        return "index";
+    }
+
 }

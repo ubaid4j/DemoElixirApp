@@ -30,6 +30,7 @@
         #w100 {
             width: 400px;
         }
+
         /*
         Max width before this PARTICULAR table gets nasty
         This query will take effect for any screen smaller than 760px
@@ -86,15 +87,25 @@
 </head>
 
 <body>
-<table>
+<table id="table">
     <thead>
+    <tr>
+        <th th:each="tableHeader: ${tableHeaders}">
+            <label th:for="${tableHeader}">
+                <select th:onchange="'sendRequest(this);'" th:id="${tableHeader}">
+                    <option>Select to Filter</option>
+                    <option th:each="name: ${filters.get(tableHeader)}" th:value="${name}" th:text="${name}"></option>
+                </select>
+            </label>
+        </th>
+    </tr>
     <tr>
         <th th:each="tableHeader: ${tableHeaders}" th:text="${tableHeader.toString()}">
     </tr>
     </thead>
     <tbody>
     <tr th:each="contract: ${contracts}">
-        <!--/*@thymesVar id="contract" type="com.ubaid.elixir.elixirApp.entity.ContractEntity"*/-->
+        <!--/*@thymesVar id="contract" type="com.ubaid.elixir.elixirApp.dto.Contract"*/-->
         <td>
             <span th:each="seg: ${contract.getContractPlanSegComp()}">
                 <p th:text="${seg}"></p>
@@ -103,15 +114,23 @@
 
         <td th:text="${contract.getContract()}"></td>
         <td th:text="${contract.getBrandName()}"></td>
-        <!--        <td th:text="${contract.getPlanNames()}"></td>-->
         <td id="w100">
             <span th:each="plan: ${contract.getPlanNames()}">
                 <p th:text="${plan}"></p>
             </span>
         </td>
 
-        <td th:text="${contract.getState()}"></td>
-        <td th:text="${contract.getStateAbbreviation()}"></td>
+        <td>
+            <span th:each="state: ${contract.getState()}">
+                <p th:text="${state}"></p>
+            </span>
+        </td>
+
+        <td>
+            <span th:each="abbr: ${contract.getStateAbbreviation()}">
+                <p th:text="${abbr}"></p>
+            </span>
+        </td>
         <td th:text="${contract.getProductType()}"></td>
     </tr>
     </tbody>
@@ -119,5 +138,31 @@
 </body>
 
 <script>
+    function sendRequest(option) {
+        const arr = ['contract_plan_seg_comp', 'contract', 'brand_name', 'plan_name', 'state', 'state_abbreviation', 'product_type'];
+        let table, filter, input, tr, td, cell, i, j;
+        arr.forEach((value) => {
+            let headerName = document.querySelector("#" + value);
+            if (headerName.selectedIndex > 0) {
+                input = headerName.options[headerName.selectedIndex].value;
+                filter = input.toUpperCase();
+                table = document.getElementById("table");
+                tr = document.getElementsByTagName("tr");
+                for (i = 1; i < tr.length; i++) {
+                    tr[i].style.display = "none";
+                    td = tr[i].getElementsByTagName("td");
+                    for (j = 0; j < td.length; j++) {
+                        cell = tr[i].getElementsByTagName("td")[j]
+                        if (cell) {
+                            if (cell.innerHTML.toUpperCase().includes(filter) === true) {
+                                tr[i].style.display = "";
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
 </script>
 </html>
