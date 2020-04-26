@@ -9,15 +9,15 @@ import java.util.List;
 
 /**
  * <p>
- *     This class is responsible to parse csv data from a given file to ContractEntities
- *     This class using open csv library for parsing csv data
+ * This class is responsible to parse csv data from a given file to ContractEntities
+ * This class using open csv library for parsing csv data
  * </p>
+ *
  * @author ubaid
  */
 public class CSVReader {
 
     /**
-     *
      * @param file csv file
      * @return list of ContractEntity entities
      */

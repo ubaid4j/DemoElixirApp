@@ -7,12 +7,13 @@ import lombok.NoArgsConstructor;
 
 /**
  * <p>
- *     This entity class is responsible for mapping csv file rows to its fields
- *     It represent the row of csv file
- *     It has method which convert this class to Data class
- *     The basic different between this entity class and dto class is that, dto is pure data class
- *     while it has a method which again split the attribute of this class and it is mapped to csv file
+ * This entity class is responsible for mapping csv file rows to its fields
+ * It represent the row of csv file
+ * It has method which convert this class to Data class
+ * The basic different between this entity class and dto class is that, dto is pure data class
+ * while it has a method which again split the attribute of this class and it is mapped to csv file
  * </p>
+ *
  * @author ubaid
  */
 @Data
@@ -34,7 +35,6 @@ public class ContractEntity {
     private String productType;
 
     /**
-     *
      * @return data class Contract
      */
     public Contract getContract() {
@@ -46,6 +46,6 @@ public class ContractEntity {
         newObj.setStateAbbreviation(stateAbbreviation.split(","));
         newObj.setProductType(productType);
         newObj.setPlanNames(planNames.split(","));
-        return  newObj;
+        return newObj;
     }
 }

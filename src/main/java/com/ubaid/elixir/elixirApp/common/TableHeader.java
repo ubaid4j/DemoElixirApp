@@ -2,7 +2,7 @@ package com.ubaid.elixir.elixirApp.common;
 
 /**
  * <p>
- *     It represents the header of table
+ * It represents the header of table
  * </p>
  *
  * @author Ubaid ur Rehman

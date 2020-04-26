@@ -11,6 +11,7 @@ import java.util.*;
  * Filters are actually all distinct items of an column
  * for example if we have BRAND_NAME, then in the filter, we have all items of BRAND_NAME
  * </p>
+ *
  * @author ubaid
  */
 public class FilterFactory {

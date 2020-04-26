@@ -59,9 +59,10 @@ public class HomeController {
 
     /**
      * <p>
-     *     It get the file from resource folder
-     *     then getting csv and filters and adding it to model
+     * It get the file from resource folder
+     * then getting csv and filters and adding it to model
      * </p>
+     *
      * @param model ui model
      * @return index page (attached with model)
      */
@@ -80,10 +81,11 @@ public class HomeController {
 
     /**
      * <p>
-     *     this method is responsible for uploading csv file, save it to temp file and
-     *     then setting csv and filters to the model
+     * this method is responsible for uploading csv file, save it to temp file and
+     * then setting csv and filters to the model
      * </p>
-     * @param file multipart file (csv file)
+     *
+     * @param file  multipart file (csv file)
      * @param model ui model
      * @return index page
      */
@@ -106,12 +108,12 @@ public class HomeController {
     }
 
     /**
-     *  <p>
-     *      this method attach the csv data and filters to the model
-     *  </p>
+     * <p>
+     * this method attach the csv data and filters to the model
+     * </p>
      *
      * @param model model view
-     * @param file csv file
+     * @param file  csv file
      * @return index page
      */
     private String setModelAndReturnIndex(Model model, File file) {
@@ -123,8 +125,9 @@ public class HomeController {
 
     /**
      * <p>
-     *     Simply creates a temporary file consisting of given input stream
+     * Simply creates a temporary file consisting of given input stream
      * </p>
+     *
      * @param inputStream input stream
      * @return file which contain the input stream
      * @throws IOException an io exception
