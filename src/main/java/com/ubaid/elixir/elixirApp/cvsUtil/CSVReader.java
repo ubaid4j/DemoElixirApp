@@ -2,17 +2,17 @@ package com.ubaid.elixir.elixirApp.cvsUtil;
 
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
-import com.ubaid.elixir.elixirApp.entity.Contract;
+import com.ubaid.elixir.elixirApp.entity.ContractEntity;
 
 import java.io.*;
 import java.util.List;
 
 public class CSVReader {
 
-    public static List<Contract> getContracts(File file) {
+    public static List<ContractEntity> getContracts(File file) {
         try (Reader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)))) {
-            CsvToBean<Contract> loadedData = new CsvToBeanBuilder<Contract>(reader)
-                    .withType(Contract.class)
+            CsvToBean<ContractEntity> loadedData = new CsvToBeanBuilder<ContractEntity>(reader)
+                    .withType(ContractEntity.class)
                     .withSeparator(',')
                     .withIgnoreLeadingWhiteSpace(true)
                     .build();
