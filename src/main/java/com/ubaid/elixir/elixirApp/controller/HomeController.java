@@ -7,14 +7,14 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;
@@ -30,6 +30,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "/")
+@CrossOrigin("*")
 public class HomeController {
 
     private final static Resource resource = new ClassPathResource("Task-Java.csv");
@@ -45,7 +46,6 @@ public class HomeController {
     private final static String FILTERS = "filters";
     private final static String FILE = "file";
     private final static String INTERNAL_SERVER_ERROR_MESSAGE = "Internal Server Error";
-    private final static String IGNORE_MESSAGE = "[Just ignore it]: Temp file deleted";
     private final static String CSV_UPLOAD_MESSAGE = "Please select a CSV file to upload.";
 
     /**
@@ -68,7 +68,7 @@ public class HomeController {
     @GetMapping(value = "/")
     public String index(Model model) {
         try {
-            setModel(model, resource.getFile());
+            setModelAndReturnIndex(model, createTempFile(resource.getInputStream()));
             return INDEX;
         } catch (IOException exp) {
             exp.printStackTrace();
@@ -95,14 +95,7 @@ public class HomeController {
             return INDEX;
         } else {
             try {
-                File tempFile = File.createTempFile(PREFIX, SUFFIX);
-                tempFile.deleteOnExit();
-                file.transferTo(tempFile);
-                setModel(model, tempFile);
-                if (tempFile.delete()) {
-                    System.out.println(IGNORE_MESSAGE);
-                }
-                return INDEX;
+                return setModelAndReturnIndex(model, createTempFile(file.getInputStream()));
             } catch (IOException exp) {
                 exp.printStackTrace();
                 model.addAttribute(MESSAGE, INTERNAL_SERVER_ERROR_MESSAGE);
@@ -119,10 +112,26 @@ public class HomeController {
      *
      * @param model model view
      * @param file csv file
+     * @return index page
      */
-    private void setModel(Model model, File file) {
+    private String setModelAndReturnIndex(Model model, File file) {
         model.addAttribute(TABLE_HEADER, tableHeaders);
         model.addAttribute(CONTRACTS, service.getContracts(file));
         model.addAttribute(FILTERS, service.getFilters(file));
+        return INDEX;
+    }
+
+    /**
+     * <p>
+     *     Simply creates a temporary file consisting of given input stream
+     * </p>
+     * @param inputStream input stream
+     * @return file which contain the input stream
+     * @throws IOException an io exception
+     */
+    private File createTempFile(InputStream inputStream) throws IOException {
+        File tempFile = File.createTempFile(PREFIX, SUFFIX);
+        Files.copy(inputStream, tempFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        return tempFile;
     }
 }
