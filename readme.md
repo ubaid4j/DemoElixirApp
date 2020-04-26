@@ -14,8 +14,8 @@
 #### For Windows Users
 - git clone https://github.com/UbaidurRehman1/DemoElixirApp
 - cd DemoElixirApp
-- mvnw spring-boot:run
-- You can access application here http://localhost:8080/
+- .\mvnw.cmd spring-boot:run
+- You can access application here http://localhost:9090/
 
 
 #### For Linux and Mac Users
