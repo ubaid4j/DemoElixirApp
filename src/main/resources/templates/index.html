@@ -8,21 +8,25 @@
             border-collapse: collapse;
             margin: 50px auto;
         }
+
         /* Zebra striping */
         tr:nth-of-type(odd) {
             background: #eee;
         }
+
         th {
             background: #3498db;
             color: white;
             font-weight: bold;
         }
+
         td, th {
             padding: 10px;
             border: 1px solid #ccc;
             text-align: left;
             font-size: 18px;
         }
+
         #w100 {
             width: 400px;
         }
@@ -37,19 +41,25 @@
         <input type="submit">
     </form>
 </div>
+<div style="margin-top: 20px">
+    <span>Filter: </span><span>Choose Column</span>
+    <span>
+        <label>
+            <select id="columns">
+                <option>Select a Column</option>
+                <option th:each="tableHeader: ${tableHeaders}" th:value="${tableHeader}"
+                        th:text="${tableHeader}"></option>
+            </select>
+        </label>
+    </span>
+    <span>
+        <label>
+            <input type="text" placeholder="Search" onkeyup="filter(this);">
+        </label>
+    </span>
+</div>
 <table id="table">
     <thead>
-    <tr>
-        <th th:each="tableHeader: ${tableHeaders}">
-            <label th:for="${tableHeader}">
-                <select th:onchange="'filter(this);'" th:id="${tableHeader}">
-                    <option>Select to Filter</option>
-                    <option th:each="name: ${filters.get(tableHeader)}" th:value="${name}" th:text="${name}"></option>
-                </select>
-            </label>
-        </th>
-    </tr>
-    <!--/*@thymesVar id="tableHeader" type="com.ubaid.elixir.elixirApp.common.TableHeader"*/-->
     <tr>
         <th th:each="tableHeader: ${tableHeaders}" th:text="${tableHeader.toString()}">
     </tr>
@@ -91,33 +101,34 @@
 <script>
 
     //for filtering
-    function filter(headerName) {
+    function filter(textInput) {
+        //getting Column Select Box
+        const columns = document.getElementById("columns");
+        let filter, tr, cell, i;
 
-        //removing all filters
-        const arr = ['contract_plan_seg_comp', 'contract', 'brand_name', 'plan_name', 'state', 'state_abbreviation', 'product_type'];
-        arr.forEach((value) => {
-            let header = document.querySelector("#" + value);
-            if (header !== headerName) {
-                header.selectedIndex = 0;
-            }
-        })
+        // Checking if column is selected
+        if (columns.selectedIndex > 0) {
 
-        //searching for selected filter
-        let filter, input, tr, td, cell, i, j;
-        if (headerName.selectedIndex > 0) {
-            input = headerName.options[headerName.selectedIndex].value;
-            filter = input.toUpperCase();
+            //get the value in the input text
+            filter = textInput.value.toUpperCase();
+
+            //get all table rows
             tr = document.getElementsByTagName("tr");
+
+            //loop through the table rows
             for (i = 1; i < tr.length; i++) {
+
+                //initially setting to hidden
                 tr[i].style.display = "none";
-                td = tr[i].getElementsByTagName("td");
-                for (j = 0; j < td.length; j++) {
-                    cell = tr[i].getElementsByTagName("td")[j]
-                    if (cell) {
-                        if (cell.innerHTML.toUpperCase().includes(filter) === true) {
-                            tr[i].style.display = "";
-                            break;
-                        }
+
+                //now getting the respective cell (of selected column)
+                cell = tr[i].getElementsByTagName("td")[columns.selectedIndex - 1]
+
+                //now check if this column contain the text
+                //if contained then setting visible the respective row
+                if (cell) {
+                    if (cell.innerHTML.toUpperCase().includes(filter) === true) {
+                        tr[i].style.display = "";
                     }
                 }
             }

@@ -1,12 +1,9 @@
 package com.ubaid.elixir.elixirApp.services;
 
-import com.ubaid.elixir.elixirApp.common.TableHeader;
 import com.ubaid.elixir.elixirApp.dto.Contract;
 
 import java.io.File;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * <p>
@@ -22,10 +19,4 @@ public interface CSVService {
      * @return all rows of the csv file (contracts)
      */
     List<Contract> getContracts(File file);
-
-    /**
-     * @param file given csv file
-     * @return all distinct items of an header
-     */
-    Map<TableHeader, Set<String>> getFilters(File file);
 }
