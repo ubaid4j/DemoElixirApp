@@ -43,7 +43,6 @@ public class HomeController {
     private final static String SUFFIX = ".csv";
     private final static String TABLE_HEADER = "tableHeaders";
     private final static String CONTRACTS = "contracts";
-    private final static String FILTERS = "filters";
     private final static String FILE = "file";
     private final static String INTERNAL_SERVER_ERROR_MESSAGE = "Internal Server Error";
     private final static String CSV_UPLOAD_MESSAGE = "Please select a CSV file to upload.";
@@ -69,7 +68,7 @@ public class HomeController {
     @GetMapping(value = "/")
     public String index(Model model) {
         try {
-            setModelAndReturnIndex(model, createTempFile(resource.getInputStream()));
+            setModel(model, createTempFile(resource.getInputStream()));
             return INDEX;
         } catch (IOException exp) {
             exp.printStackTrace();
@@ -97,7 +96,7 @@ public class HomeController {
             return INDEX;
         } else {
             try {
-                return setModelAndReturnIndex(model, createTempFile(file.getInputStream()));
+                return setModel(model, createTempFile(file.getInputStream()));
             } catch (IOException exp) {
                 exp.printStackTrace();
                 model.addAttribute(MESSAGE, INTERNAL_SERVER_ERROR_MESSAGE);
@@ -116,10 +115,9 @@ public class HomeController {
      * @param file  csv file
      * @return index page
      */
-    private String setModelAndReturnIndex(Model model, File file) {
+    private String setModel(Model model, File file) {
         model.addAttribute(TABLE_HEADER, tableHeaders);
         model.addAttribute(CONTRACTS, service.getContracts(file));
-        model.addAttribute(FILTERS, service.getFilters(file));
         return INDEX;
     }
 

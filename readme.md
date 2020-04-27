@@ -1,10 +1,9 @@
 ### Notes
-- I have used ```lombok``` , enable it on your IntelliJ Idea to avoid compile time error  
-- Java 14 is must cause I used *Java Switch Expression* which require Java 14 or greater
-- If you don't have Java 14 then run ```./multiStage-run.sh```
+- I have used ```lombok``` , enable it on your IntelliJ Idea to avoid compile time error
+- Java 8 is compatible, Now you can run it with Java 8
 
 ### Requirements
-- Java 14
+- Java 8 or greater
 
 ### What it does
 - When you access http://localhost:9090/ then it simply read a csv file (stored inside the application) and View the rows of CSV file in tabular form

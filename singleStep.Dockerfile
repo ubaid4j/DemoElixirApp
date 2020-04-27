@@ -1,4 +1,4 @@
-FROM openjdk:14-jdk-buster
+FROM openjdk:8u252-jre-slim
 LABEL maintainer="urehman.bese16seecs@seecs.edu.pk"
 VOLUME /tmp
 EXPOSE 9090
